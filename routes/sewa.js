@@ -148,5 +148,6 @@ app.delete("/:id_sewa", (req, res) => {
             res.json({message: "Data SEWA Berhasil Dihapus"})
         }
     })
-
 })
+
+module.exports = app

@@ -21,6 +21,6 @@ app.use("/karyawan", karyawanRoutes)
 app.use("/sewa", sewaRoutes)
 
 //port
-app.listen(3000, () => {
-    console.log("Run on port 3000")
+app.listen(8000, () => {
+    console.log("Run on port 8000")
 })

@@ -1,6 +1,8 @@
 const express = require("express")
 const mysql = require("mysql")
 const md5 = require('md5')
+const Cryptr = require("cryptr")
+const crypt = new Cryptr("140533601726")
 
 const app = express()
 
@@ -61,7 +63,7 @@ validateToken = () => {
 
 //=========================== KARYAWAN ===========================
 // endpoint login karyawan (authentication)
-app.post("//auth", (req, res) => {
+app.post("/auth", (req, res) => {
     // tampung username dan password
     let param = [
         req.body.username, //username
